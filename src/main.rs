@@ -131,7 +131,7 @@ fn main() {
         word_counts.push(wc);
     }
 
-    let mut total = WC::init("Total".to_string());
+    let mut total = WC::init("total".to_string());
 
     for wc in word_counts {
         total.bytes += wc.bytes;
@@ -141,4 +141,6 @@ fn main() {
 
         wc.print(options);
     }
+
+    total.print(options);
 }
